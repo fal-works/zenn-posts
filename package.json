@@ -1,0 +1,10 @@
+{
+  "name": "zenn",
+  "version": "0.1.0",
+  "description": "none",
+  "scripts": {},
+  "author": "FAL",
+  "devDependencies": {
+    "zenn-cli": "^0.1.66"
+  }
+}
