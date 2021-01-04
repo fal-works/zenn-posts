@@ -356,17 +356,17 @@ ESLint を [Prettier](#prettier) と併用するときに使う^[ESLint と Pret
 エクスポートは次のように `export` 文を使う。
 
 ```js
-// myModule.js
+// my-module.js
 const doSomething = () => { /* 何かを行う */ };
 export { doSomething };
 ```
 
 インポートは次のように `import` 文を使う。
-`import * as MyModule from '...';` のようにモジュールごとインポートしても良い。
+`import * as myModule from '...';` のようにモジュールごとインポートしても良い。
 
 ```js
-// myScript.js
-import { doSomething } from './myModule'; // 同じディレクトリにあると仮定
+// my-script.js
+import { doSomething } from './my-module'; // 同じディレクトリにあると仮定
 doSomething(); // 何かが行われる
 ```
 
@@ -388,7 +388,7 @@ TypeScript でも（基本的には）同様の文法となる。
 例えばエクスポートのときには
 
 ```js
-// myModule.js
+// my-module.js
 function doSomething() { /* 何かを行う */ }
 exports.doSomething = doSomething;
 ```
@@ -396,8 +396,8 @@ exports.doSomething = doSomething;
 のようにして、このモジュールをインポートするときには `require()` を使う。
 
 ```js
-// myScript.js
-var myModule = require('./myModule.js'); // 同じディレクトリにあると仮定
+// my-script.js
+var myModule = require('./my-module.js'); // 同じディレクトリにあると仮定
 myModule.doSomething(); // 何かが行われる
 ```
 
@@ -408,13 +408,15 @@ myModule.doSomething(); // 何かが行われる
 
 Immediately Invoked Function Expression（即時実行関数式）の略。
 関数を括弧で包んで、宣言と同時に実行する書き方。
+参考： 「IIFE (即時実行関数式) - MDN Web Docs 用語集」
+　<https://developer.mozilla.org/ja/docs/Glossary/IIFE>
 
 [モジュールシステム](#モジュールシステム)の文脈で IIFE と言うときは、[モジュール](#モジュール)全体を IIFE で包み、インポートやエクスポートに相当することをやるにはグローバル変数を介して行う、という方式のことを指す。
 
 例えばエクスポートは、IIFE から `return` させた値をグローバル変数に入れる。
 
 ```js
-// myModule.js
+// my-module.js
 var myModule = (function () {
   function doSomething() { /* 何かを行う */ }
   return { doSomething };
@@ -424,7 +426,7 @@ var myModule = (function () {
 インポートは、あらかじめ上記のようにしてエクスポートしてあったグローバル変数を、インポート側の IIFE を実行するときに引数で渡す。
 
 ```js
-// myScript.js
+// my-script.js
 (function (myModule) {
   myModule.doSomething(); // 何かが行われる
 })(myModule);
@@ -433,8 +435,8 @@ var myModule = (function () {
 これを HTML ファイルの中で順番に読み込めば、それぞれのスクリプト間ではグローバル変数が共有されるので、全体が無事に動作する。
 
 ```html
-<script src="myModule.js"></script> <!-- グローバル変数 myModule が利用可能になる -->
-<script src="myScript.js"></script> <!-- それをこの中で利用する -->
+<script src="my-module.js"></script> <!-- グローバル変数 myModule が利用可能になる -->
+<script src="my-script.js"></script> <!-- それをこの中で利用する -->
 ```
 
 わざわざ IIFE で包む理由は、そうしないと各種変数が何でもかんでもグローバルになってしまって、互いに余計な影響を与えてしまいかねないからであり、モジュールごとの影響範囲を限定するためにこうしている。
@@ -506,7 +508,7 @@ https://rollupjs.org/
 
 ## デッドコード削除
 
-ソースコードの中で使われていない（削除しても影響がない）部分を機械的に検知・削除すること。
+ソースコードの中で使われていない（削除しても影響がない）部分を機械的に検知して削除すること。
 
 ## tree-shaking
 
@@ -524,6 +526,8 @@ JavaScript のコードや CSS のファイルなどを、文字数が極力少�
 空白文字やコメントを削除したり、変数名を短くしたり、より短い記法ができるように組み替えたり、[デッドコード削除](#デッドコード削除)を行ったりすることでコードを圧縮する。
 
 主に、Webページで読み込むデータの量を少なくして表示速度を上げる目的でこれを行う。
+
+慣例的に、例として元のファイル名が `my-script
 
 ## terser
 
