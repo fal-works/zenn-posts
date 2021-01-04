@@ -1,5 +1,5 @@
 ---
-title: "JavaScript 用語集 - 開発環境関連 [2021/1]"
+title: "JavaScript用語集 開発環境関連 [2021/1]"
 emoji: "🛠️"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["javascript", "typescript"]
