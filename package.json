@@ -1,10 +1,11 @@
 {
-  "name": "zenn",
-  "version": "0.1.0",
+  "name": "zenn-posts",
   "description": "none",
-  "scripts": {},
+  "version": "0.1.0",
   "author": "FAL",
   "devDependencies": {
     "zenn-cli": "^0.1.66"
-  }
+  },
+  "private": true,
+  "scripts": {}
 }
