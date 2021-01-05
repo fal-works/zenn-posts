@@ -1,7 +1,6 @@
 {
   "name": "zenn-posts",
-  "description": "none",
-  "version": "0.1.0",
+  "license": "UNLICENSED",
   "author": "FAL",
   "devDependencies": {
     "zenn-cli": "^0.1.66"
