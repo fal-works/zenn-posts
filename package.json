@@ -3,6 +3,10 @@
   "license": "UNLICENSED",
   "author": "FAL",
   "devDependencies": {
+    "textlint": "^11.7.7",
+    "textlint-filter-rule-allowlist": "^2.0.1",
+    "textlint-rule-preset-ja-technical-writing": "^4.0.1",
+    "textlint-rule-preset-jtf-style": "^2.3.6",
     "zenn-cli": "^0.1.66"
   },
   "private": true,
