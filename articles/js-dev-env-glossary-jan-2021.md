@@ -306,8 +306,6 @@ ESLint に怒られながらコードを書く過程で、推奨されるコー�
 
 なお [TypeScript](#typescript) と併用するにはそれ用の[プラグイン](#プラグイン)が必要[^eslint-ts]。
 
-[^eslint-ts]: ESLint とは別に TypeScript 用の TSLint (<https://palantir.github.io/tslint/>) というのもあったが、そちらの開発が鈍化した一方で ESLint が TypeScript にも対応し始めたため、多くの人が ESLint に乗り換えた。
-
 ## コードフォーマッター
 
 ソースコードを自動で整形してくれるツールの総称。
