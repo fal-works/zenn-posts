@@ -199,7 +199,7 @@ JavaScript の標準仕様。ソースコードをこう書いたらこう動く
 ## ES2015
 
 [ECMAScript](#ecmascript) 2015 の略。[ES5](#es5) の次なので ES6 とも。
-参考：「ECMAScript- Wikipedia」<https://ja.wikipedia.org/wiki/ECMAScript>
+参考：「ECMAScript - Wikipedia」<https://ja.wikipedia.org/wiki/ECMAScript>
 
 `const`、`let`、`class`、アロー関数、その他多数の重要な文法が追加されており、ES5 以前のコードと ES2015 以降のコードはひと目で分かるくらい違う。
 よりシンプルかつバグりにくいコードが書けるので、状況が許すなら積極的に使いたい。
@@ -304,7 +304,7 @@ https://eslint.org/
 ESLint に怒られながらコードを書く過程で、推奨されるコードの書き方が自然に身につく……かもしれない。
 一時的にルールを破りたいときには、指定の形式でコメントを書くことで部分的に無効化できる。
 
-なお [TypeScript](#typescript) と併用するにはそれ用の[プラグイン](#プラグイン)が必要[^eslint-ts]。
+なお [TypeScript](#typescript) と併用するにはそれ用の[プラグイン](#プラグイン)が必要。
 
 ## コードフォーマッター
 
