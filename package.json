@@ -12,7 +12,7 @@
     "textlint-rule-preset-ja-technical-writing": "^4.0.1",
     "textlint-rule-preset-jtf-style": "^2.3.6",
     "textlint-rule-terminology": "^2.1.4",
-    "zenn-cli": "^0.1.66"
+    "zenn-cli": "^0.1.67"
   },
   "private": true,
   "scripts": {
