@@ -12,6 +12,10 @@
   },
   "private": true,
   "scripts": {
-    "preview": "start http://localhost:8000 & zenn preview"
+    "preview": "start http://localhost:8000 & zenn preview",
+    "vscode": "npm run vscode:mdlint && npm run vscode:textlint && npm run vscode:prettier",
+    "vscode:textlint": "code --install-extension taichi.vscode-textlint",
+    "vscode:mdlint": "code --install-extension davidanson.vscode-markdownlint",
+    "vscode:prettier": "code --install-extension esbenp.prettier-vscode"
   }
 }
