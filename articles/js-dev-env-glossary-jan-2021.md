@@ -52,7 +52,7 @@ Disclaimer:
 いずれも便利だし必要性があって生まれてきているが、いろいろありすぎて大変でもある[^rome]。
 
 [^rome]: JavaScript 界隈、ツールがいろいろ乱立しすぎだろという批判も散々言われていて、例えば Rome (<https://rome.tools/>) のように全部乗せの最終形態を作ろうぜみたいな動きもあるけれど、統一が果たされるのはまだ先であろう。
-参考：「大統一 Node ツールチェイン Rome の野望 現状の実装」
+参考：『大統一 Node ツールチェイン Rome の野望 現状の実装』
 <https://mizchi.dev/202008101816-ambitious-rome>
 
 ## ライブラリー
@@ -364,7 +364,7 @@ ESLint を [Prettier](#prettier) と併用するときに使う[^eslint-plugin]�
 ある JavaScript の[モジュール](#モジュール)の中にある何らかの値を、他のモジュールから使われることを意図して公開すること。
 ここで「値」とは、プリティミティブ値、関数、クラス、その他オブジェクトなどなんでも。
 
-[TypeScript](#typescript) の場合、値だけでなく型エイリアスやインターフェースも対象となる
+[TypeScript](#typescript) の場合、値だけでなく型エイリアスやインターフェイスも対象となる
 （例： `export type NumberOrString = number | string;`）。
 
 ## インポート
