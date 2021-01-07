@@ -321,7 +321,7 @@ https://prettier.io/
 特徴としては opinionated であること。つまり「特定のルールを押し付けないから自分で細かく設定してね」ではなく、「これが我々の推奨するルールだッ！」という雰囲気でデフォルト設定が決まっている。特に何も設定せずに使っても、開発元が推奨するとおりのコードスタイルにできる。
 どうしても変えたいところがあれば設定変更もできる[^prettier]。
 
-[^prettier]: Prettier においても、「文字列を囲むときにダブルクォートよりシングルクォートを優先したいのだが」みたいな話は未だに議論されているようだ（<https://github.com/prettier/prettier/issues/4102>）。
+[^prettier]: Prettier においても「文字列を囲むときにダブルクォートよりシングルクォートを優先したいんだが」みたいな話はいまだに議論されているようだ（<https://github.com/prettier/prettier/issues/4102>）。
 
 なお JavaScript/TypeScript 以外にも様々な言語に対応している。
 
