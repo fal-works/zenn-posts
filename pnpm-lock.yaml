@@ -3,6 +3,7 @@ devDependencies:
   textlint-filter-rule-allowlist: 2.0.1_textlint@11.7.7
   textlint-rule-preset-ja-technical-writing: 4.0.1_textlint@11.7.7
   textlint-rule-preset-jtf-style: 2.3.6_textlint@11.7.7
+  textlint-rule-terminology: 2.1.4
   zenn-cli: 0.1.66
 lockfileVersion: 5.2
 packages:
@@ -7098,6 +7099,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
+  /strip-json-comments/3.1.1:
+    dev: true
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
   /structured-source/3.0.2:
     dependencies:
       boundary: 1.0.1
@@ -7519,6 +7526,16 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0C7XZvqcdDwBQC1Sfyr47uDAChH0dO3O4gjxG4C/cwRFK8cyjIic8h7g+xaN7c9x+4OoMz+89SksuaHLo5UvqQ==
+  /textlint-rule-terminology/2.1.4:
+    dependencies:
+      lodash: 4.17.20
+      strip-json-comments: 3.1.1
+      textlint-rule-helper: 2.1.1
+    dev: true
+    engines:
+      node: '>=8.9'
+    resolution:
+      integrity: sha512-kLw4qL8RwY2lCNqgKveHc5sjCDlS5Tdw2TXWOrHvSvQxqaVOwsv3+51oMIQLGfJzQrhFSMlSlw5MvfaOerBvPQ==
   /textlint-tester/5.0.1:
     dependencies:
       '@textlint/feature-flag': 3.2.5
@@ -8350,4 +8367,5 @@ specifiers:
   textlint-filter-rule-allowlist: ^2.0.1
   textlint-rule-preset-ja-technical-writing: ^4.0.1
   textlint-rule-preset-jtf-style: ^2.3.6
+  textlint-rule-terminology: ^2.1.4
   zenn-cli: ^0.1.66
