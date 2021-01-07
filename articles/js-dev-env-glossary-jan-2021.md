@@ -183,9 +183,10 @@ JavaScript の標準仕様。ソースコードをこう書いたらこう動く
 
 何度も改版を重ねており、中でも特に大幅に拡張されたのが、[ES5](#es5) の次の [ES2015](#es2015) である。
 
-実際に JavaScript のコードを解釈して動かすのは各種実行環境（[ブラウザー](#Webブラウザー)や [Node.js](#node.js)）なので、どの環境でどの版までが有効なのかは一律ではない。「Can I use...」（<https://caniuse.com/>）というサイトで、個別機能ごとのブラウザー対応状況を確認できる。
+実際に JavaScript のコードを解釈して動かすのは各種実行環境（[ブラウザー](#Webブラウザー)や [Node.js](#node.js)）なので、どの環境でどの版までが有効なのかは一律ではない。
+『Can I use...』（<https://caniuse.com/>）というサイトで、個別機能ごとのブラウザー対応状況を確認できる。
 
-参考：「JavaScriptとは · JavaScript Primer」<https://jsprimer.net/basic/introduction/>
+参考：『JavaScriptとは · JavaScript Primer』<https://jsprimer.net/basic/introduction/>
 
 ## ES5
 
@@ -199,11 +200,11 @@ JavaScript の標準仕様。ソースコードをこう書いたらこう動く
 ## ES2015
 
 [ECMAScript](#ecmascript) 2015 の略。[ES5](#es5) の次なので ES6 とも。
-参考：「ECMAScript - Wikipedia」<https://ja.wikipedia.org/wiki/ECMAScript>
+参考：『ECMAScript - Wikipedia』<https://ja.wikipedia.org/wiki/ECMAScript>
 
 `const`、`let`、`class`、アロー関数、その他多数の重要な文法が追加されており、ES5 以前のコードと ES2015 以降のコードはひと目で分かるくらい違う。
 よりシンプルかつバグりにくいコードが書けるので、状況が許すなら積極的に使いたい。
-参考：「ES2015(ES6) 入門 - Qiita」<https://qiita.com/soarflat/items/b251caf9cb59b72beb9b>
+参考：『ES2015(ES6) 入門 - Qiita』<https://qiita.com/soarflat/items/b251caf9cb59b72beb9b>
 
 ## トランスパイル
 
@@ -244,7 +245,7 @@ JavaScript に限らずあらゆるソフトウェアのインストールや管
 JavaScript における代表的な[パッケージマネージャー](#パッケージマネージャー)。
 
 [Node.js](#node.js) に含まれており、Node.js をインストールした時点で、コマンドラインで `npm` コマンドが使えるようになる。
-参考：「CLI documentation - npm docs」<https://docs.npmjs.com/cli/>
+参考：『CLI documentation - npm docs』<https://docs.npmjs.com/cli/>
 
 自分が開発中の[パッケージ](#パッケージ)のディレクトリーの中に `package.json` というファイルを置いて、そのパッケージに関するメタ情報や設定などを記録する形で利用する。
 例えば、そのパッケージが依存する他のパッケージの一覧をバージョン込みで記録・管理して、それらを一括自動インストールできる。結果、それらのパッケージ内の[モジュール](#モジュール)が[エクスポート](#エクスポート)している機能を自分のソースコードの中で[インポート](#インポート)したりできる。
@@ -271,7 +272,7 @@ https://pnpm.js.org/
 汎用的に使えるパッケージはグローバルインストールするのも悪くないが、バージョン整合性の観点や、自分の各パッケージでどのツールが必要なのかを明に管理したいことなどを考えると、やっぱり基本はローカルインストールとしたい。
 しかしそうすると、おびただしい数のファイル群をパッケージごとにインストールすることとなり、時間がかかるし、ディスクスペースがかなりもったいない[^node_modules]。
 
-[^node_modules]: npm でインストールしたパッケージは `node_modules` というフォルダーに保存されるが、これは小規模開発においても簡単に数千ファイル・数百MBとなる。→「Heaviest Objects In The Universe | reddit」<https://www.reddit.com/r/ProgrammerHumor/comments/6s0wov/heaviest_objects_in_the_universe/>
+[^node_modules]: npm でインストールしたパッケージは `node_modules` というフォルダーに保存されるが、これは小規模開発においても簡単に数千ファイル・数百MBとなる。→『Heaviest Objects In The Universe | reddit』<https://www.reddit.com/r/ProgrammerHumor/comments/6s0wov/heaviest_objects_in_the_universe/>
 
 pnpm は、見かけ上は従来のパッケージマネージャーと同じように動きつつ、インストールしたパッケージ群の実体は一箇所で一元管理する。よって無駄なダウンロードやファイルコピーを極力行わない。ついでに、依存関係が複雑な場合に整合性が取りにくくなる問題も解決する（らしい）。
 
@@ -287,7 +288,7 @@ pnpm は、見かけ上は従来のパッケージマネージャーと同じよ
 
 主にバグの予防を目的として、ソースコードを機械的にチェックしてくれるツールの総称[^lint]。
 
-[^lint]: lint/linter などの語があまりカタカナで定着していないのでここではアルファベット表記とした。参考：「lint - Wikipedia」<https://ja.wikipedia.org/wiki/Lint>
+[^lint]: lint/linter などの語があまりカタカナで定着していないのでここではアルファベット表記とした。参考：『lint - Wikipedia』<https://ja.wikipedia.org/wiki/Lint>
 
 バグの温床となりうるような行儀のよろしくないコードを検知して知らせてくれたり、可能であれば自動で修正してくれたりする。
 
@@ -298,7 +299,7 @@ https://eslint.org/
 代表的な [linter](#linter)。[npm](#npm) でインストール可能。
 
 細かくルールを設定できるが、`recommended` なルール郡を一括適用して手軽に始めるも良し。
-参考：「ESLintのルールを全部手動で設定するのは大変だからやめておけ」
+参考：『ESLintのルールを全部手動で設定するのは大変だからやめておけ』
 <https://qiita.com/khsk/items/0f200fc3a4a3542efa90>
 
 ESLint に怒られながらコードを書く過程で、推奨されるコードの書き方が自然に身につく……かもしれない。
@@ -333,7 +334,7 @@ https://github.com/prettier/eslint-config-prettier
 ESLint を [Prettier](#prettier) と併用するときに使う[^eslint-plugin]。
 
 [^eslint-plugin]: ESLint と Prettier の併用に必要なプラグインとしてもう一つ、eslint-plugin-prettier というのがあったのだが、こちらは状況の変化などもあって最近非推奨となった。
-参考：「Prettier と ESLint の組み合わせの公式推奨が変わり plugin が不要になった」<https://blog.ojisan.io/prettier-eslint-cli>
+参考：『Prettier と ESLint の組み合わせの公式推奨が変わり plugin が不要になった』<https://blog.ojisan.io/prettier-eslint-cli>
 
 もともと ESLint にはバグ予防だけでなく[フォーマッター](#コードフォーマッター)としてのコード整形機能も入っているが、コード整形についてはそれを専門とする Prettier に任せる方法が主流となりつつある。
 しかし ESLint と Prettier を一緒に使うと、コード整形のルールが衝突して編集合戦みたいになるので、ESLint 側のコード整形機能をオフにしたい。
@@ -350,7 +351,7 @@ ESLint を [Prettier](#prettier) と併用するときに使う[^eslint-plugin]�
 
 粒度に関して、JavaScript/TypeScript においては、基本的には1つのソースコードのファイルが1つのモジュールだと思って良い。ただし、いくつかのモジュールを置いたディレクトリーの中に `index.js` などを置いておくと、そのディレクトリー自体が1つのモジュールとして振る舞う、という感じになっていることも多い[^ryan]。
 
-[^ryan]: ディレクトリーをモジュール扱いすると便利な面もあるが、Node.js の作者は、これはあまり良くなかったと思っているようだ。→「Node.js における設計ミス By Ryan Dahl」
+[^ryan]: ディレクトリーをモジュール扱いすると便利な面もあるが、Node.js の作者は、これはあまり良くなかったと思っているようだ。→『Node.js における設計ミス By Ryan Dahl』
 <https://yosuke-furukawa.hatenablog.com/entry/2018/06/07/080335>）
 
 あるモジュールの内容を[エクスポート](#エクスポート)し、それを他のモジュールで[インポート](#インポート)することによって、モジュール間の依存関係が生まれる。[モジュールシステム](#モジュールシステム)も参照。
@@ -408,7 +409,7 @@ doSomething(); // 何かが行われる
 [Node.js](#node.js) では先に [CommonJS](#commonjs) ライクな方式を採用したのが定着していたため不便が生じているが、最近徐々にESモジュールにも対応できるようになってきた。
 
 また最近のブラウザーでは、ESモジュールのファイルを[バンドル](#バンドル)せずにブラウザー上でそのまま動かすこともできる。
-参考：「JavaScript モジュール - JavaScript | MDN」
+参考：『JavaScript モジュール - JavaScript | MDN』
 <https://developer.mozilla.org/ja/docs/Web/JavaScript/Guide/Modules>
 
 ## CommonJS
@@ -438,7 +439,7 @@ myModule.doSomething(); // 何かが行われる
 現代で CommonJS が話題に出るとき、多くの場合は CommonJS そのものというより、上記を元にした [Node.js](#node.js) 版のモジュールシステムのことを指している、と思って良い[^commonjs]。
 
 [^commonjs]: 歴史的な経緯もあって Node.js のモジュールシステムと CommonJS は同一視されがちだが、別に完全準拠ではないようだ。
-参考：「Node.jsとCommonJSについて」<http://meso.hatenablog.com/entry/20110626/1309082158>
+参考：『Node.jsとCommonJSについて』<http://meso.hatenablog.com/entry/20110626/1309082158>
 
 なおエクスポートに限っては、[ブラウザー](#webブラウザー)向けのコードでもこれを採用していることがある。
 というのも、[ESモジュール](#ESモジュール)が登場する前は他の[モジュールシステム](#モジュールシステム)しか選択肢が無かったため、Node.js で実行するつもりが無くても、利用者が後でうまいこと[バンドル](#バンドル)する前提で CommonJS 形式（大抵はそれ以外も兼ねた [UMD](#umd)）によるエクスポートを行っていたのである。
@@ -448,7 +449,7 @@ myModule.doSomething(); // 何かが行われる
 
 Immediately Invoked Function Expression（即時実行関数式）の略。
 関数を括弧で包んで、宣言と同時に実行する書き方。
-参考：「IIFE (即時実行関数式) - MDN Web Docs 用語集」
+参考：『IIFE (即時実行関数式) - MDN Web Docs 用語集』
 　<https://developer.mozilla.org/ja/docs/Glossary/IIFE>
 
 [モジュールシステム](#モジュールシステム)の文脈で IIFE と言うときは、[モジュール](#モジュール)のコード全体を IIFE で包み、[インポート](#インポート)や[エクスポート](#エクスポート)に相当することをグローバル変数を介して行う、という方式のことを指す。
@@ -491,7 +492,7 @@ var myModule = (function () {
 これにより実行された環境に応じてカメレオンのごとく振る舞いを変え、IIFE の項のようにグローバル空間に吐き出したり、[CommonJS](#commonjs) や AMD[^amd] のやり方でエクスポートしたりする。
 
 [^amd]: モジュールシステム AMD については本稿では書いていないし、筆者もよく分かっていない。
-参考：「JSエコシステムぶらり探訪(6): AMDとモジュールローダー - Qiita」
+参考：『JSエコシステムぶらり探訪(6): AMDとモジュールローダー - Qiita』
 <https://qiita.com/qnighy/items/0c3fd208e0356fa19cda>
 
 
