@@ -49,3 +49,4 @@ rules:
 
   "@textlint-ja/textlint-rule-no-insert-dropping-sa": true
   ja-hiragana-hojodoushi: true
+  ja-hiragana-keishikimeishi: true
