@@ -43,3 +43,6 @@ rules:
     defaultTerms: false
     skip: ["Blockquote"]
     terms: lint-config/terms.json
+
+  "@textlint-ja/textlint-rule-no-insert-dropping-sa": true
+  ja-hiragana-hojodoushi: true

@@ -1,6 +1,8 @@
 devDependencies:
+  '@textlint-ja/textlint-rule-no-insert-dropping-sa': 1.0.1
   textlint: 11.7.7
   textlint-filter-rule-allowlist: 2.0.1_textlint@11.7.7
+  textlint-rule-ja-hiragana-hojodoushi: 1.0.4
   textlint-rule-preset-ja-technical-writing: 4.0.1_textlint@11.7.7
   textlint-rule-preset-jtf-style: 2.3.6_textlint@11.7.7
   textlint-rule-terminology: 2.1.4
@@ -1233,6 +1235,14 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-XIB2XbzHTN6ieIjfIMV9hlVcfPU26s2vafYWQcZHWXHOxiaRZYEDKEwdl129Zyg50+foYV2jCgtrqSA6qNuNSA==
+  /@textlint-ja/textlint-rule-no-insert-dropping-sa/1.0.1:
+    dependencies:
+      array-find-index: 1.0.2
+      kuromojin: 1.5.1
+      morpheme-match-all: 1.2.0
+    dev: true
+    resolution:
+      integrity: sha1-7zaBm+gwGZinZKh72OzKKo4ASEk=
   /@textlint-rule/textlint-rule-no-invalid-control-character/1.2.0:
     dependencies:
       execall: 1.0.0
@@ -1832,6 +1842,12 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-45sJrqne+Gao8gbiiK9jkZuuOcQ=
+  /array-find-index/1.0.2:
+    dev: true
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-3wEKoSh+Fku9pvlyOwqWoexBh6E=
   /array-unique/0.3.2:
     dev: true
     engines:
@@ -4633,6 +4649,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-Sqvzm8zti4rZLQB6BKJr5tqEd8k=
+  /kuromojin/1.5.1:
+    dependencies:
+      kuromoji: 0.1.1
+    dev: true
+    resolution:
+      integrity: sha512-tzt3UUqWqzwHMsahchyrcs9kgbn6OM7xP4QRCd0w5vqE0lA/cjCH0OxjLaekz5cnxGmcy8RfN7La3xOxZOvJ1w==
   /kuromojin/2.1.1:
     dependencies:
       kuromoji: 0.1.1
@@ -5122,6 +5144,12 @@ packages:
     dev: true
     resolution:
       integrity: sha1-CI7s0cIsjzGiQK3PnJXlTzPrVPs=
+  /morpheme-match-all/1.2.0:
+    dependencies:
+      morpheme-match: 1.2.1
+    dev: true
+    resolution:
+      integrity: sha512-z8F1k4U8fAMcjkGBDWwVrKZLR8VSvKtYh6+5GZ9hi5mtXrYMILwDMgiPwfNGJvk/liQEG9/oNAJUcwLpyjI9Xg==
   /morpheme-match-all/2.0.5:
     dependencies:
       morpheme-match: 2.0.4
@@ -5135,6 +5163,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-CX+iQaUjjPMLvas+hZ8zg6Csxx5j1RLaytr+5w6lpBi/oTEV2pv6sgW5Vu3+pNJHbYcaqcuofQZsKocMNUNH8g==
+  /morpheme-match/1.2.1:
+    dev: true
+    resolution:
+      integrity: sha512-SSIcFPas4Dctx5PbrfKbW5XNADlkcn38LI+fqgB9QtminQ7FXeOR3//rnAmooZ1/5zTGeFoi8H9kFBAH9y1nfQ==
   /morpheme-match/2.0.4:
     dev: true
     resolution:
@@ -7318,6 +7350,14 @@ packages:
     dev: true
     resolution:
       integrity: sha512-6fxgHzoJVkjl3LaC1b2Egi+5wbhG4i0pU0knJmQujVhxIJ3D3AcQQZPs457xKAi5xKz1WayYeTeJ5jrD/hnO7g==
+  /textlint-rule-ja-hiragana-hojodoushi/1.0.4:
+    dependencies:
+      js-yaml: 3.14.1
+      kuromojin: 1.5.1
+      morpheme-match-all: 1.2.0
+    dev: true
+    resolution:
+      integrity: sha1-OUlfUSpQuHPgNLVdM9+NnGi55k0=
   /textlint-rule-ja-no-abusage/2.0.1:
     dependencies:
       kuromojin: 2.1.1
@@ -8363,8 +8403,10 @@ packages:
       tarball: 'https://codeload.github.com/catnose99/markdown-it-custom-block/tar.gz/7969ce2cca2fd30bd543104e45e6b67386d0743c'
     version: 0.1.1
 specifiers:
+  '@textlint-ja/textlint-rule-no-insert-dropping-sa': ^1.0.1
   textlint: ^11.7.7
   textlint-filter-rule-allowlist: ^2.0.1
+  textlint-rule-ja-hiragana-hojodoushi: ^1.0.4
   textlint-rule-preset-ja-technical-writing: ^4.0.1
   textlint-rule-preset-jtf-style: ^2.3.6
   textlint-rule-terminology: ^2.1.4
