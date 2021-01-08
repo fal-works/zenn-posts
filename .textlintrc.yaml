@@ -42,12 +42,11 @@ rules:
     3.1.2.全角文字どうし: false
     4.3.1.丸かっこ（）: false
 
-  terminology:
-    defaultTerms: false
-    skip: ["Blockquote"]
-    terms: lint-config/terms.json
-
   "@textlint-ja/textlint-rule-no-insert-dropping-sa": true
   ja-hiragana-fukushi: true
   ja-hiragana-hojodoushi: true
   ja-hiragana-keishikimeishi: true
+
+  prh:
+    rulePaths:
+      - prh/patterns.yaml

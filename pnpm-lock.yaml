@@ -1,4 +1,5 @@
 devDependencies:
+  '@fal-works/prh-from-words': 0.1.0
   '@textlint-ja/textlint-rule-no-insert-dropping-sa': 1.0.1
   textlint: 11.7.7
   textlint-filter-rule-allowlist: 2.0.1_textlint@11.7.7
@@ -7,8 +8,10 @@ devDependencies:
   textlint-rule-ja-hiragana-keishikimeishi: 1.1.0
   textlint-rule-preset-ja-technical-writing: 4.0.1_textlint@11.7.7
   textlint-rule-preset-jtf-style: 2.3.6_textlint@11.7.7
-  textlint-rule-terminology: 2.1.4
-  zenn-cli: 0.1.67
+  textlint-rule-prh: 5.3.0
+  ts-node: 9.1.1_typescript@4.1.3
+  typescript: 4.1.3
+  zenn-cli: 0.1.67_typescript@4.1.3
 lockfileVersion: 5.2
 packages:
   /@ampproject/toolbox-core/2.7.4:
@@ -1154,6 +1157,12 @@ packages:
     dev: true
     resolution:
       integrity: sha512-jBD+G8+LWpMBBWvVcdr4QysjUE4mU/syrhN17o1u3gx0/WzJB1kwiVZAXRtWbsIPOwW8pF/YJV5+nmetPzepXg==
+  /@fal-works/prh-from-words/0.1.0:
+    dependencies:
+      js-yaml: 4.0.0
+    dev: true
+    resolution:
+      integrity: sha512-Oy2xsOjp2df9OXXFR1XQ8YRcoKI0JLU9mde6+L1INFTBc9Dn98IX+IY/0hC3pdEfWT0dR2oDUZVzL1r63Da0fQ==
   /@hapi/accept/5.0.1:
     dependencies:
       '@hapi/boom': 9.1.1
@@ -1822,6 +1831,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==
+  /argparse/2.0.1:
+    dev: true
+    resolution:
+      integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==
   /arity-n/1.0.4:
     dev: true
     resolution:
@@ -2770,6 +2783,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==
+  /create-require/1.1.1:
+    dev: true
+    resolution:
+      integrity: sha512-dcKFX3jn0MpIaXjisoRvexIJVEKzaq7z2rZKxf+MSr9TkdmHmsU4m2lcLojrj/FHl8mk5VxMmYA+ftRkP/3oKQ==
   /cross-fetch/3.0.5:
     dependencies:
       node-fetch: 2.6.0
@@ -4527,6 +4544,13 @@ packages:
     hasBin: true
     resolution:
       integrity: sha512-okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==
+  /js-yaml/4.0.0:
+    dependencies:
+      argparse: 2.0.1
+    dev: true
+    hasBin: true
+    resolution:
+      integrity: sha512-pqon0s+4ScYUvX30wxQi3PogGFAlUyH0awepWvwkj4jD4v+ova3RiYw8bmA6x2rDrEaj8i/oWKoRxpVNW+Re8Q==
   /jsesc/0.5.0:
     dev: true
     hasBin: true
@@ -4845,6 +4869,10 @@ packages:
       node: '>=8'
     resolution:
       integrity: sha512-g3FeP20LNwhALb/6Cz6Dd4F2ngze0jz7tbzrD2wAV+o9FeNHe4rL+yK2md0J/fiSf1sa1ADhXqi5+oVwOM/eGw==
+  /make-error/1.3.6:
+    dev: true
+    resolution:
+      integrity: sha512-s8UhlNe7vPKomQhC1qFelMokr/Sc3AgNbso3n74mVPA5LTZwkB9NlXf4XPamLxJE8h0gh73rM94xvwRT2CVInw==
   /map-cache/0.2.2:
     dev: true
     engines:
@@ -5241,7 +5269,7 @@ packages:
     dev: true
     resolution:
       integrity: sha1-yobR/ogoFpsBICCOPchCS524NCw=
-  /next/10.0.1_react-dom@17.0.1+react@17.0.1:
+  /next/10.0.1_c39e9db791ea05e3ec4e0e74abb7a6b5:
     dependencies:
       '@ampproject/toolbox-optimizer': 2.7.0-alpha.1
       '@babel/code-frame': 7.10.4
@@ -5285,7 +5313,7 @@ packages:
       neo-async: 2.6.1
       node-html-parser: 1.4.9
       path-browserify: 1.0.1
-      pnp-webpack-plugin: 1.6.4
+      pnp-webpack-plugin: 1.6.4_typescript@4.1.3
       postcss: 8.1.1
       process: 0.11.10
       prop-types: 15.7.2
@@ -5314,6 +5342,7 @@ packages:
     peerDependencies:
       react: ^16.6.0 || ^17
       react-dom: ^16.6.0 || ^17
+      typescript: '*'
     resolution:
       integrity: sha512-EFlcWe82CQc1QkeIhNogcdC25KBz4CBwjyzfRHhig+wp28GW1O2P/mX+2a7EG1wXg69GyW1JYXOkKk2/VjIwVg==
   /node-abi/2.19.3:
@@ -5838,12 +5867,14 @@ packages:
     dev: true
     resolution:
       integrity: sha1-crcmqm+sHt7uQiVsfY3CVrM1Z38=
-  /pnp-webpack-plugin/1.6.4:
+  /pnp-webpack-plugin/1.6.4_typescript@4.1.3:
     dependencies:
-      ts-pnp: 1.2.0
+      ts-pnp: 1.2.0_typescript@4.1.3
     dev: true
     engines:
       node: '>=6'
+    peerDependencies:
+      typescript: '*'
     resolution:
       integrity: sha512-7Wjy+9E3WwLOEL30D+m8TSTF7qJJUJLONBnwQp0518siuMxUQUbgZwssaFX+QKlZkjHZcw/IpZCt/H0srrntSg==
   /posix-character-classes/0.1.1:
@@ -7084,12 +7115,6 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=
-  /strip-json-comments/3.1.1:
-    dev: true
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-6fPc+R4ihwqP6N/aIv2f1gMH8lOVtWQHoqC4yK6oSDVVocumAsfCqjkXnqiYMhmMwS/mEHLp7Vehlt3ql6lEig==
   /structured-source/3.0.2:
     dependencies:
       boundary: 1.0.1
@@ -7535,16 +7560,6 @@ packages:
     dev: true
     resolution:
       integrity: sha512-0C7XZvqcdDwBQC1Sfyr47uDAChH0dO3O4gjxG4C/cwRFK8cyjIic8h7g+xaN7c9x+4OoMz+89SksuaHLo5UvqQ==
-  /textlint-rule-terminology/2.1.4:
-    dependencies:
-      lodash: 4.17.20
-      strip-json-comments: 3.1.1
-      textlint-rule-helper: 2.1.1
-    dev: true
-    engines:
-      node: '>=8.9'
-    resolution:
-      integrity: sha512-kLw4qL8RwY2lCNqgKveHc5sjCDlS5Tdw2TXWOrHvSvQxqaVOwsv3+51oMIQLGfJzQrhFSMlSlw5MvfaOerBvPQ==
   /textlint-tester/5.0.1:
     dependencies:
       '@textlint/feature-flag': 3.2.5
@@ -7709,7 +7724,26 @@ packages:
     dev: true
     resolution:
       integrity: sha1-z95vq9ctY+V5fPqrhzq76OcA6RI=
-  /ts-pnp/1.2.0:
+  /ts-node/9.1.1_typescript@4.1.3:
+    dependencies:
+      arg: 4.1.3
+      create-require: 1.1.1
+      diff: 4.0.2
+      make-error: 1.3.6
+      source-map-support: 0.5.19
+      typescript: 4.1.3
+      yn: 3.1.1
+    dev: true
+    engines:
+      node: '>=10.0.0'
+    hasBin: true
+    peerDependencies:
+      typescript: '>=2.7'
+    resolution:
+      integrity: sha512-hPlt7ZACERQGf03M253ytLY3dHbGNGrAq9qIHWUY9XHYl1z7wYngSr3OQ5xmui8o2AaxsONxIzjafLUiWBo1Fg==
+  /ts-pnp/1.2.0_typescript@4.1.3:
+    dependencies:
+      typescript: 4.1.3
     dev: true
     engines:
       node: '>=6'
@@ -7773,6 +7807,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  /typescript/4.1.3:
+    dev: true
+    engines:
+      node: '>=4.2.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-B3ZIOf1IKeH2ixgHhj6la6xdwR9QrLC5d1VKeCSY4tvkqhF2eqd9O7txNlS0PO3GrBAFIdr3L1ndNwteUbZLYg==
   /uc.micro/1.0.6:
     dev: true
     resolution:
@@ -8304,7 +8345,13 @@ packages:
     dev: true
     resolution:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
-  /zenn-cli/0.1.67:
+  /yn/3.1.1:
+    dev: true
+    engines:
+      node: '>=6'
+    resolution:
+      integrity: sha512-Ux4ygGWsu2c7isFWe8Yu1YluJmqVhxqK2cLXNQA5AcC3QfbGNpM7fu0Y8b/z16pXLnFxZYvWhd3fhBY9DLmC6Q==
+  /zenn-cli/0.1.67_typescript@4.1.3:
     dependencies:
       '@types/socket.io': 2.1.12
       '@types/update-notifier': 5.0.0
@@ -8317,7 +8364,7 @@ packages:
       fs-extra: 9.0.1
       gray-matter: 4.0.2
       js-yaml: 3.14.1
-      next: 10.0.1_react-dom@17.0.1+react@17.0.1
+      next: 10.0.1_c39e9db791ea05e3ec4e0e74abb7a6b5
       open: 7.3.1
       react: 17.0.1
       react-dom: 17.0.1_react@17.0.1
@@ -8331,6 +8378,8 @@ packages:
     engines:
       node: '>=10.13.0'
     hasBin: true
+    peerDependencies:
+      typescript: '*'
     resolution:
       integrity: sha512-W2qu2hsPJwSMNv49H5cymOVUb+sR4kuYVnVD04D6bKBr9WKm5N3UtC/fbJMqWWgtJHxsf88qHoHWxzLyabhmPA==
   /zenn-content-css/0.1.67:
@@ -8372,6 +8421,7 @@ packages:
       tarball: 'https://codeload.github.com/catnose99/markdown-it-custom-block/tar.gz/7969ce2cca2fd30bd543104e45e6b67386d0743c'
     version: 0.1.1
 specifiers:
+  '@fal-works/prh-from-words': ^0.1.0
   '@textlint-ja/textlint-rule-no-insert-dropping-sa': ^1.0.1
   textlint: ^11.7.7
   textlint-filter-rule-allowlist: ^2.0.1
@@ -8380,5 +8430,7 @@ specifiers:
   textlint-rule-ja-hiragana-keishikimeishi: ^1.1.0
   textlint-rule-preset-ja-technical-writing: ^4.0.1
   textlint-rule-preset-jtf-style: ^2.3.6
-  textlint-rule-terminology: ^2.1.4
+  textlint-rule-prh: ^5.3.0
+  ts-node: ^9.1.1
+  typescript: ^4.1.3
   zenn-cli: ^0.1.67

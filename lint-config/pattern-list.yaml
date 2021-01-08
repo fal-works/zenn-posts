@@ -1,0 +1,111 @@
+# case-sensitive
+- Airbnb
+- Android
+- AppleScript
+- AVA
+- CodePen
+- CodeSandbox
+- DefinitelyTyped
+- Deno
+- dprint
+- EditorConfig
+- esbuild
+- ESLint
+- Git
+- GitHub
+- Google
+- GraphQL
+- GraphiQL
+- iOS
+- JavaScript
+- JetBrains
+- jQuery
+- LinkedIn
+- Lodash
+- MacBook
+- Markdown
+- OpenType
+- PayPal
+- Sass
+- SemVer
+- Svelte
+- swc
+- TypeScript
+- Wasm
+- WebAssembly
+- webpack
+- WebStorm
+- WordPress
+- YouTube
+- ECMAScript
+- Ajax
+- API
+- CSS
+- GIF
+- HTML
+- HTTPS
+- IoT
+- I/O
+- JPEG
+- MIME
+- OK
+- PaaS
+- PDF
+- PNG
+- SaaS
+- URL
+- ID
+
+# other patterns
+- Common[ .]js => CommonJS
+- JSDocs? => JSDoc
+- React[ .]js => React
+- StackOverflow => Stack Overflow
+- HTTP[ /]2(?:\\.0)? => HTTP/2
+- OS X => macOS
+- Mac ?OS => macOS
+- VSCode => VS Code
+- 2-?D => 2D
+- 3-?D => 3D
+- spread operator => spread syntax
+- auto[- ]complete => autocomplete
+- auto[- ]format => autoformat
+- auto[- ]fix => autofix
+- auto[- ]fixing => autofixing
+- back[- ]end(\\w*) => backend$1
+- bug[- ]fix(es)? => bugfix$1
+- change[- ]log(s)? => changelog$1
+- check[- ]box(es)? => checkbox$1
+- end[- ]point(s)? => endpoint$1
+- e[- ]mail(s)? => email$1
+- file[- ]name(s)? => filename$1
+- front[- ]end(\\w*) => frontend$1
+- host[- ]name(s)? => hostname$1
+- lock[- ]file(s)? => lockfile$1
+- mark-up => markup
+- meta[- ]data => metadata
+- name[- ]space(s)? => namespace$1
+- re[- ]write => rewrite
+- run[- ]time => runtime
+- screen[- ]shot(s)? => screenshot$1
+- sub[- ]class((?:es|ing)?) => subclass$1
+- time[- ]stamp(s)? => timestamp$1
+- touch[- ]screen(s)? => touchscreen$1
+- user[- ]name(s)? => username$1
+- white[- ]space => whitespace
+- wild[- ]card(s)? => wildcard$1
+- code-?splitting => code splitting
+- end-?user(s)? => end user$1
+- file-?type(s)? => file type$1
+- open-?source(ed?) => open source$1
+- style-?guide(s)? => style guide$1
+- tree-?shaking => tree shaking
+- source-?map(s)? => source map$1
+- style-?sheet(s)? => style sheet$1
+- web-?page(s)? => web page$1
+- built ?in => built-in
+- client ?side => client-side
+- command ?line => command-line
+- higher ?order => higher-order
+- key[/ ]?value => key-value
+- server ?side => server-side
