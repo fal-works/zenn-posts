@@ -515,11 +515,11 @@ var myModule = (function () {
 
 ついでに [treeshake](#tree-shaking) したり、特定の [ECMAScript](#ecmascript) のバージョンに[トランスパイル](#トランスパイル)したりと、いろいろやってくれることが多い。
 
-## Webpack
+## webpack
 
 https://webpack.js.org/
 
-*CAUTION*: rollup と並べるために置いたが Webpack エアプです
+*CAUTION*: rollup と並べるために置いたが webpack エアプです
 
 代表的な[モジュールバンドラー](#モジュールバンドラー)の一つ。[npm](#npm) でインストール可能。
 
@@ -533,10 +533,10 @@ https://rollupjs.org/
 
 特徴：
 
-- かなり大きな仕組みである [Webpack](#webpack) などに比べると比較的スリムである。
+- かなり大きな仕組みである [webpack](#webpack) などに比べると比較的スリムである。
 - [モジュールシステム](#モジュールシステム)に関して、[ESモジュール](#esモジュール)を基本とする。
 - 比較的きれいなコードを生成してくれる傾向がある（という意見を見かける）。
-- 使い分けについて “Webpack for apps, rollup for libraries” などと言われたりもしている。
+- 使い分けについて “webpack for apps, rollup for libraries” などと言われたりもしている。
 ライブラリーに限らず小規模な[パッケージ](#パッケージ)や、バンドル対象ファイルが `*.js`/`*.ts` だけのパッケージなどに向いていると思われる。
 
 ただし [TypeScript](#typescript) ファイルのバンドルはデフォルトでは行えず[プラグイン](#プラグイン)が必要になる。
@@ -576,7 +576,7 @@ JavaScript のコードや CSS のファイルなどを、文字数が極力少�
 
 https://terser.org/
 
-JavaScript のコードを [minify](#minify) してくれるツールの代表格。
+Javacript のコードを [minify](#minify) してくれるツールの代表格。
 [npm](#npm) でインストール可能。
 
 
