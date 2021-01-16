@@ -330,15 +330,15 @@ https://prettier.io/
 
 https://github.com/prettier/eslint-config-prettier
 
-[ESLint](#eslint) の[プラグイン](#プラグイン)の一つ。[npm](#npm) でインストール可能。
+[ESLint](#eslint) 用の コンフィグ（設定）の一つ。[npm](#npm) でインストール可能。
 ESLint を [Prettier](#prettier) と併用するときに使う[^eslint-plugin]。
 
-[^eslint-plugin]: ESLint と Prettier の併用に必要なプラグインとしてもう一つ、eslint-plugin-prettier というのがあったのだが、こちらは状況の変化などもあって最近非推奨となった。
+[^eslint-plugin]: ESLint と Prettier の併用に必要なプラグインとして、もう一つ eslint-plugin-prettier というのがあったのだが、こちらは状況の変化などもあって最近非推奨となった。
 参考：『Prettier と ESLint の組み合わせの公式推奨が変わり plugin が不要になった』<https://blog.ojisan.io/prettier-eslint-cli>
 
 もともと ESLint にはバグ予防だけでなく[フォーマッター](#コードフォーマッター)としてのコード整形機能も入っているが、コード整形についてはそれを専門とする Prettier に任せる方法が主流となりつつある。
 しかし ESLint と Prettier を一緒に使うと、コード整形のルールが衝突して編集合戦みたいになるので、ESLint 側のコード整形機能をオフにしたい。
-これを手動でやる場合、ESLint 側の設定ファイル（eslintrc）の `rules` のところで該当するルールを個別に `off` にしていくことになるのだが、面倒なので一括でやってほしい……というのをやってくれるのがこのプラグインである。
+これを手動でやる場合、ESLint 側の設定ファイル（eslintrc）の `rules` のところで該当するルールを個別に `off` にしていくことになるのだが、面倒なので一括でやってほしい……というのをやってくれるのがこいつである。
 
 
 ----
