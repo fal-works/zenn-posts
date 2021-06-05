@@ -6,7 +6,6 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.markdownlint": true
   },
-  "prettier.disableLanguages": ["markdown"],
   "[markdown]": {
     "editor.wordWrap": "on",
     "editor.quickSuggestions": false,
