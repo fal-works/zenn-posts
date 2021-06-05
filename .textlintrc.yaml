@@ -27,7 +27,8 @@ rules:
     no-exclamation-question-mark: false
     no-hankaku-kana: true
     ja-no-weak-phrase: false
-    ja-no-successive-word: true
+    ja-no-successive-word:
+      allow: ["…"]
     ja-no-abusage: true
     ja-no-redundant-expression: true
 
