@@ -5,6 +5,7 @@
   "devDependencies": {
     "@fal-works/prh-from-words": "^0.1.0",
     "@textlint-ja/textlint-rule-no-insert-dropping-sa": "^2.0.1",
+    "@types/node": "^18.0.0",
     "prettier": "^2.7.1",
     "textlint": "^12.1.1",
     "textlint-filter-rule-allowlist": "^4.0.0",

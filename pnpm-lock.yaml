@@ -3,6 +3,7 @@ lockfileVersion: 5.3
 specifiers:
   '@fal-works/prh-from-words': ^0.1.0
   '@textlint-ja/textlint-rule-no-insert-dropping-sa': ^2.0.1
+  '@types/node': ^18.0.0
   prettier: ^2.7.1
   textlint: ^12.1.1
   textlint-filter-rule-allowlist: ^4.0.0
@@ -16,6 +17,9 @@ specifiers:
   typescript: ^4.7.3
   zenn-cli: ^0.1.113
 
+dependencies:
+  '@types/node': 18.0.0
+
 devDependencies:
   '@fal-works/prh-from-words': 0.1.0
   '@textlint-ja/textlint-rule-no-insert-dropping-sa': 2.0.1
@@ -28,7 +32,7 @@ devDependencies:
   textlint-rule-preset-ja-technical-writing: 7.0.0_textlint@12.1.1
   textlint-rule-preset-jtf-style: 2.3.12_textlint@12.1.1
   textlint-rule-prh: 5.3.0
-  ts-node: 10.8.1_typescript@4.7.3
+  ts-node: 10.8.1_b7efa985ab8492bc20421895ecc875ff
   typescript: 4.7.3
   zenn-cli: 0.1.113
 
@@ -278,6 +282,10 @@ packages:
     dependencies:
       '@types/unist': 2.0.6
     dev: true
+
+  /@types/node/18.0.0:
+    resolution: {integrity: sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==}
+    dev: false
 
   /@types/structured-source/3.0.0:
     resolution: {integrity: sha512-8u+Wo5+GEXe4jZyQ8TplLp+1A7g32ZcVoE7VZu8VcxnlaEm5I/+T579R7q3qKN76jmK0lRshpo4hl4bj/kEPKA==}
@@ -2351,7 +2359,7 @@ packages:
     resolution: {integrity: sha512-yHeaPjCBzVaXwWl5IMUapTaTC2rn/eBYg2fsG2L+CvJd+ttFbk0ylDnpTO3wVhosmE1tQEvcebbBeKLCwScQSQ==}
     dev: true
 
-  /ts-node/10.8.1_typescript@4.7.3:
+  /ts-node/10.8.1_b7efa985ab8492bc20421895ecc875ff:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
@@ -2370,6 +2378,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
+      '@types/node': 18.0.0
       acorn: 8.7.1
       acorn-walk: 8.2.0
       arg: 4.1.3
