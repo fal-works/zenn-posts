@@ -1,4 +1,4 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@fal-works/prh-from-words': ^0.1.0
@@ -17,12 +17,10 @@ specifiers:
   typescript: ^4.7.3
   zenn-cli: ^0.1.113
 
-dependencies:
-  '@types/node': 18.0.0
-
 devDependencies:
   '@fal-works/prh-from-words': 0.1.0
   '@textlint-ja/textlint-rule-no-insert-dropping-sa': 2.0.1
+  '@types/node': 18.0.0
   prettier: 2.7.1
   textlint: 12.1.1
   textlint-filter-rule-allowlist: 4.0.0_textlint@12.1.1
@@ -32,7 +30,7 @@ devDependencies:
   textlint-rule-preset-ja-technical-writing: 7.0.0_textlint@12.1.1
   textlint-rule-preset-jtf-style: 2.3.12_textlint@12.1.1
   textlint-rule-prh: 5.3.0
-  ts-node: 10.8.1_b7efa985ab8492bc20421895ecc875ff
+  ts-node: 10.8.1_w7x2tbnlqsjlyiccdck6zsdv74
   typescript: 4.7.3
   zenn-cli: 0.1.113
 
@@ -48,10 +46,25 @@ packages:
       '@azu/format-text': 1.0.1
     dev: true
 
+  /@babel/helper-validator-identifier/7.16.7:
+    resolution: {integrity: sha512-hsEnFemeiW4D08A5gUAZxLBTXpZ39P+a+DGDsHw1yxqyQ/jzFEnxf5uTEGp+3bzAbNOxU1paTgYS4ECU/IgfDw==}
+    engines: {node: '>=6.9.0'}
+    dev: true
+
   /@babel/parser/7.18.5:
     resolution: {integrity: sha512-YZWVaglMiplo7v8f1oMQ5ZPQr0vn7HPeZXxXWsxXJRjGVrzUFn9OxFQl1sb5wzfootjA/yChhW84BV+383FSOw==}
     engines: {node: '>=6.0.0'}
     hasBin: true
+    dependencies:
+      '@babel/types': 7.18.4
+    dev: true
+
+  /@babel/types/7.18.4:
+    resolution: {integrity: sha512-ThN1mBcMq5pG/Vm2IcBmPPfyPXbd8S02rS+OBIDENdufvqC7Z/jHPCv9IcP01277aKtDI8g/2XysBN4hA8niiw==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      '@babel/helper-validator-identifier': 7.16.7
+      to-fast-properties: 2.0.0
     dev: true
 
   /@cspotcode/source-map-support/0.8.1:
@@ -285,7 +298,7 @@ packages:
 
   /@types/node/18.0.0:
     resolution: {integrity: sha512-cHlGmko4gWLVI27cGJntjs/Sj8th9aYwplmZFwmmgYQQvL5NUsgVJG7OddLvNfLqYS31KFN0s3qlaD9qCaxACA==}
-    dev: false
+    dev: true
 
   /@types/structured-source/3.0.0:
     resolution: {integrity: sha512-8u+Wo5+GEXe4jZyQ8TplLp+1A7g32ZcVoE7VZu8VcxnlaEm5I/+T579R7q3qKN76jmK0lRshpo4hl4bj/kEPKA==}
@@ -2337,6 +2350,11 @@ packages:
       - supports-color
     dev: true
 
+  /to-fast-properties/2.0.0:
+    resolution: {integrity: sha512-/OaKK0xYrs3DmxRYqL/yDc+FxFUVYhDlXMhRmv3z915w2HF1tnN1omB354j8VUGO/hbRzyD6Y3sA7v7GS/ceog==}
+    engines: {node: '>=4'}
+    dev: true
+
   /to-regex/3.0.2:
     resolution: {integrity: sha512-FWtleNAtZ/Ki2qtqej2CXTOayOH9bHDQF+Q48VpWyDXjbYxA4Yz8iDB31zXOBUlOHHKidDbqGVrTUvQMPmBGBw==}
     engines: {node: '>=0.10.0'}
@@ -2359,7 +2377,7 @@ packages:
     resolution: {integrity: sha512-yHeaPjCBzVaXwWl5IMUapTaTC2rn/eBYg2fsG2L+CvJd+ttFbk0ylDnpTO3wVhosmE1tQEvcebbBeKLCwScQSQ==}
     dev: true
 
-  /ts-node/10.8.1_b7efa985ab8492bc20421895ecc875ff:
+  /ts-node/10.8.1_w7x2tbnlqsjlyiccdck6zsdv74:
     resolution: {integrity: sha512-Wwsnao4DQoJsN034wePSg5nZiw4YKXf56mPIAeD6wVmiv+RytNSWqc2f3fKvcUoV+Yn2+yocD71VOfQHbmVX4g==}
     hasBin: true
     peerDependencies:
