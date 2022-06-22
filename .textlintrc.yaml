@@ -3,6 +3,7 @@ filters:
     allow:
       - '/\[\^.+\]: +[「『（]/' # 脚注が括弧で始まるときにスペースを認める
       - "/(?<=『).*?(?=』)/" # 『』内は治外法権
+      - 東京ゲームショウ
 
 rules:
   preset-ja-technical-writing:
@@ -22,7 +23,7 @@ rules:
     no-doubled-conjunction: true
     no-doubled-joshi:
       min_interval: 1
-      allow: ["も", "や", "たり"]
+      allow: ["も", "や", "たり", "とか"]
     no-nfd: true
     no-exclamation-question-mark: false
     no-hankaku-kana: true
